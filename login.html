@@ -7,7 +7,8 @@
   <title>Login | B7Store</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -27,45 +28,48 @@
   <script defer src="assets/js/auth.js"></script>
 </head>
 
-<body class="min-h-screen bg-[#F9F9F9] font-poppins text-black">
+<body class="min-h-screen bg-[#e8eef5] font-poppins text-slate-900">
   <main class="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-12">
     <div class="absolute -left-32 top-10 h-72 w-72 rounded-full bg-brand/20 blur-3xl"></div>
     <div class="absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-black/10 blur-3xl"></div>
 
-    <section class="relative grid w-full max-w-5xl overflow-hidden rounded-3xl border border-white/70 bg-white shadow-2xl lg:grid-cols-[1.05fr_0.95fr]">
-      <div class="hidden bg-gradient-to-br from-brand via-[#1238C9] to-black p-10 text-white lg:flex lg:flex-col lg:justify-between">
-        <a href="index.html" class="inline-flex w-fit items-center rounded-2xl bg-white px-5 py-4 shadow-lg transition-all hover:scale-105">
-          <img src="assets/images/ui/logo-black.png" alt="B7Store">
-        </a>
+    <section
+      class="relative grid w-full max-w-5xl overflow-hidden rounded-3xl border border-[#b8c5d6] bg-[#cfd9e6] shadow-xl lg:grid-cols-[1.05fr_0.95fr]">
+      <div class="relative hidden overflow-hidden bg-gradient-to-br from-[#5B8DEF] via-[#4A78D8] to-[#385BAA] p-12 text-white lg:flex lg:flex-col lg:justify-center">
 
-        <div class="my-20">
-          <div class="mb-6 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
-            Frete grátis para todo o Nordeste
-          </div>
-          <h1 class="max-w-md text-5xl font-bold leading-tight">
-            Entre na sua conta e continue comprando.
-          </h1>
-          <p class="mt-6 max-w-sm text-lg text-white/75">
-            Acesse seus pedidos, favoritos e aproveite ofertas exclusivas da B7Store.
-          </p>
-        </div>
+  <!-- Efeitos decorativos -->
+  <div class="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-white/10"></div>
+  <div class="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-white/5"></div>
 
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-            <div class="text-2xl font-bold">30d</div>
-            <div class="mt-1 text-xs text-white/70">troca fácil</div>
-          </div>
-          <div class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-            <div class="text-2xl font-bold">PIX</div>
-            <div class="mt-1 text-xs text-white/70">pagamento</div>
-          </div>
-          <div class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-            <div class="text-2xl font-bold">24h</div>
-            <div class="mt-1 text-xs text-white/70">ofertas</div>
-          </div>
-        </div>
-      </div>
+  <!-- Logo -->
+  <a href="index.html"
+    class="relative z-10 inline-flex w-fit items-center rounded-2xl bg-white px-5 py-4 shadow-xl transition-all hover:scale-105">
+    <img src="assets/images/ui/logo-black.png" alt="B7Store">
+  </a>
 
+  <!-- Conteúdo -->
+  <div class="relative z-10 mt-16">
+    <div
+      class="mb-6 inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium backdrop-blur">
+      🛍️ Novidades todos os dias
+    </div>
+
+    <h1 class="max-w-md text-5xl font-extrabold leading-tight">
+      Tudo o que você procura em um só lugar.
+    </h1>
+
+    <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">
+      Entre na sua conta para acompanhar pedidos, salvar produtos favoritos e aproveitar ofertas exclusivas da B7Store.
+    </p>
+
+    <div class="mt-8 flex items-center gap-3">
+      <div class="h-3 w-3 rounded-full bg-white"></div>
+      <div class="h-3 w-3 rounded-full bg-white/60"></div>
+      <div class="h-3 w-3 rounded-full bg-white/30"></div>
+    </div>
+  </div>
+
+</div>
       <div class="px-6 py-8 sm:px-10 lg:px-14 lg:py-12">
         <div class="mb-10 flex items-center justify-between lg:hidden">
           <a href="index.html" class="inline-flex rounded-2xl bg-white p-3 shadow-md">
@@ -85,17 +89,21 @@
         <div class="space-y-5">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-[#7F7F7F]">E-mail</span>
-            <div class="flex items-center rounded-2xl border border-[#D9D9D9] bg-[#F9F9F9] px-4 transition-all focus-within:border-brand focus-within:bg-white focus-within:shadow-lg focus-within:shadow-brand/10">
+            <div
+              class="flex items-center rounded-2xl border border-[#a7b7cc] bg-white/80 px-4 transition-all focus-within:border-brand focus-within:bg-white focus-within:shadow-lg focus-within:shadow-brand/10">
               <img class="mr-3 h-5 w-5 opacity-60" src="assets/images/ui/mail-line.png" alt="">
-              <input id="email" type="email" placeholder="seuemail@exemplo.com" class="h-14 w-full bg-transparent text-sm outline-none placeholder:text-[#B7B7B7]">
+              <input id="email" type="email" placeholder="seuemail@exemplo.com"
+                class="h-14 w-full bg-transparent text-sm outline-none placeholder:text-[#B7B7B7]">
             </div>
           </label>
 
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-[#7F7F7F]">Senha</span>
-            <div class="flex items-center rounded-2xl border border-[#D9D9D9] bg-[#F9F9F9] px-4 transition-all focus-within:border-brand focus-within:bg-white focus-within:shadow-lg focus-within:shadow-brand/10">
+            <div
+              class="flex items-center rounded-2xl border border-[#D9D9D9] bg-[#F9F9F9] px-4 transition-all focus-within:border-brand focus-within:bg-white focus-within:shadow-lg focus-within:shadow-brand/10">
               <img class="mr-3 h-5 w-5 opacity-60" src="assets/images/ui/user-line.png" alt="">
-              <input id="password" type="password" placeholder="Digite sua senha" class="h-14 w-full bg-transparent text-sm outline-none placeholder:text-[#B7B7B7]">
+              <input id="password" type="password" placeholder="Digite sua senha"
+                class="h-14 w-full bg-transparent text-sm outline-none placeholder:text-[#B7B7B7]">
             </div>
           </label>
 
@@ -107,17 +115,20 @@
             <a href="#" class="font-medium text-brand transition-colors hover:text-black">Esqueci a senha</a>
           </div>
 
-          <button onclick="handleLogin()" class="w-full rounded-2xl bg-brand px-6 py-4 text-base font-semibold text-white shadow-lg shadow-brand/25 transition-all hover:scale-[1.02] hover:bg-[#173fd0] hover:shadow-xl">
+          <button onclick="handleLogin()"
+            class="w-full rounded-2xl bg-[#5B8DEF] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all hover:scale-[1.02] hover:bg-[#4A78D8]">
             Entrar
           </button>
 
-          <button onclick="handleRegister()" class="w-full rounded-2xl border border-[#D9D9D9] bg-white px-6 py-4 text-base font-semibold text-black transition-all hover:scale-[1.02] hover:border-black hover:shadow-lg">
+          <button onclick="handleRegister()"
+            class="w-full rounded-2xl border border-[#D9D9D9] bg-white px-6 py-4 text-base font-semibold text-black transition-all hover:scale-[1.02] hover:border-black hover:shadow-lg">
             Criar conta
           </button>
         </div>
 
         <div class="mt-10 rounded-2xl bg-gradient-to-r from-brand/10 to-black/5 p-5 text-sm text-[#7F7F7F]">
-          <span class="font-semibold text-black">Dica:</span> depois do login, você será redirecionado automaticamente para a loja.
+          <span class="font-semibold text-black">Dica:</span> depois do login, você será redirecionado automaticamente
+          para a loja.
         </div>
       </div>
     </section>
